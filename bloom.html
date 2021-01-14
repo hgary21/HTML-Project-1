@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HDRP Bloom</title>
+</head>
+
+<body>
+
+	<!-- Image source: https://upload.wikimedia.org/wikipedia/commons/1/19/Unity_Technologies_logo.svg -->
+
+	<h1><img src="assets/unity.svg" alt="Unity Logo" width="100"> HDRP Bloom</h1>
+
+	<form action="index.html">
+		<input type="submit" value="Home">
+	</form>
+
+	<hr>
+
+	<p>
+		Bloom is a post processing effect that blurs bright parts of the HDR render to achieve a glowing visual effect.
+		This allows objects brighter than the traditional brightest color, RGB 255 255 255, to appear even brighter by
+		affecting neighboring pixels. This effect is usually implemented with a <em>Gaussian Blur</em> after a
+		luminosity threshold step.
+	</p>
+
+	<p>
+		It is difficult to apply bloom during the main rendering process because the <em>Gaussian Blur</em> layers
+		require access to neighboring pixel's information, which might not be immediately available. Hence, bloom is
+		most often implemented as a post processing effect, meaning it is applied after the majority of the render is
+		completed. While post processing effects cannot directly read critical data about the scene and material, they
+		can still use the depth buffer and other intermediate rendering passes which provide sufficent information to
+		efficently calculate or approximate many photorealistic effects like bloom.
+	</p>
+
+	<br>
+
+	<!-- Image from https://catlikecoding.com/unity/tutorials/advanced-rendering/bloom/ -->
+
+	<a href="https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@10.2/manual/Post-Processing-Bloom.html"
+		target="_blank">
+		<img src="assets/hdrp bloom.jpg" alt="HDRP Bloom" width="800">
+	</a>
+
+	<!-- Image from OpenGL https://learnopengl.com/Advanced-Lighting/Bloom -->
+
+	<br>
+
+	<img src="assets/bloom opengl.png" alt="OpenGL Bloom" width="800">
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Unity HDRP</title>
+</head>
+
+<body>
+
+	<!-- Image source: https://upload.wikimedia.org/wikipedia/commons/1/19/Unity_Technologies_logo.svg -->
+
+	<h1><img src="assets/unity.svg" alt="Unity Logo" width="100"> HDRP</h1>
+	<h2>What is Unity HDRP?</h2>
+
+	<hr>
+
+	<p>
+		High Definition Render Pipeline (<strong>HDRP</strong>) is a new rendering system for the Unity Engine
+		functioning under its Scripting Render Pipeline (<strong>SRP</strong>). <strong>SRP</strong> allows the user to
+		fully customize
+		the rendering process, from clearing the background, culling the objects, to custom effects during post
+		processing or custom passes.
+		<strong>HDRP</strong> omits the need for a professional graphics programmer since it provides implemented tools
+		on top of the <strong>SRP</strong> platform and produces physics based rendering with great graphics while
+		maintaining decent performance.
+	</p>
+
+	<a href="https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@10.2/manual/index.html"
+		target="_blank">Go to Unity HDRP Documentation</a>
+
+	<p>
+		<strong>HDRP</strong> supports many rendering features and post processing effects through its volume framework;
+		Some are listed below:
+	</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Type</th>
+				<th>Performance Cost</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>Auto Exposure</td>
+				<td>Rendering</td>
+				<td>Low</td>
+			</tr>
+			<tr>
+				<td>Ambient Occlusion</td>
+				<td>Post Processing</td>
+				<td>High</td>
+			</tr>
+			<tr>
+				<td>Screen Space Global Illumination</td>
+				<td>Post Processing</td>
+				<td>High</td>
+			</tr>
+			<tr>
+				<td>Multi Sampling Anti Aliasing</td>
+				<td>Rendering</td>
+				<td>Medium</td>
+			</tr>
+			<tr>
+				<td>Fast Approximate Anti Aliasing</td>
+				<td>Post Processing</td>
+				<td>Low</td>
+			</tr>
+			<tr>
+				<td>Volumetric Fog</td>
+				<td>Rendering</td>
+				<td>Medium</td>
+			</tr>
+			<tr>
+				<td><a href="bloom.html">Bloom</a></td>
+				<td>Post Processing</td>
+				<td>Low</td>
+			</tr>
+			<tr>
+				<td><a href="custom pass.html">Custom Pass</a></td>
+				<td>Custom</td>
+				<td>Custom</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+
+	<!-- Image from https://blogs.unity3d.com/2018/09/24/the-high-definition-render-pipeline-getting-started-guide-for-artists/ -->
+
+	<a href="https://blogs.unity3d.com/2018/09/24/the-high-definition-render-pipeline-getting-started-guide-for-artists/"
+		target="_blank">
+		<img src="assets/hdrp picture.jpg" alt="HDRP picture" width="500">
+	</a>
+
+	<br>
+
+	<!-- iframe code modified from YouTube's share embed section -->
+
+	<iframe width="800" height="450" src="https://www.youtube.com/embed/4r2thboZ_xY" frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen></iframe>
+
+</body>
+
+</html>
